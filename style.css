@@ -236,7 +236,7 @@ aside img{
 }
 
 /* Resolução 1680x1050 */
-@media (max-width: 1680px) {
+@media (max-width: 2868px) {
     body {
         font-size: 18px;
     }
@@ -263,7 +263,7 @@ aside img{
 }
 
 /* Resolução 1024x768 */
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
     header {
         
         padding: 5px 0;
