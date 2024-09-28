@@ -326,7 +326,7 @@ aside img{
 }
 
 /* Resolução 320x568 (celulares) */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     header {
         padding: 8px 0;
     }
