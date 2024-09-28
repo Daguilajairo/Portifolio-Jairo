@@ -237,15 +237,24 @@ aside img{
 
 
 
-@media  screen and (max-width: 768px){
-       
-    header .container-logo{
+@media  screen and (max-width: 375px){
+ 
+    body{
+    background-image: none;
+    background-color: #413f3f;
+    }
+
+    header{
+        display: block;
+        text-align: center;
+    }
+    .container-logo{
         display: block;
         padding: 20px;
     }
 
     .container-logo img{
-        width: 50px;
+        width: 60px;
     }
     
     nav a{
