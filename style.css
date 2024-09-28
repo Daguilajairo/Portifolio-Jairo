@@ -253,10 +253,8 @@ aside img{
 }
     main{
         display: block;
+        width: 100%;
+        text-align: center;
     }
-
-    article h1 {
-       text-align: center;
-      
-    }
+    
 }
