@@ -234,3 +234,20 @@ aside img{
     padding: 5px 5px 5px 5px;
 
 }
+
+
+
+@media  screen and (max-width: 768px){
+       
+    header .container-logo{
+        display: block;
+        padding: 20px;
+    }
+
+    .container-logo img{
+        width: 50px;
+    }
+    
+    nav a{
+    font-size: 35px;
+}
