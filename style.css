@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Gowun+Batang:wght@400;700&display=swap');
+
+ :root{
+    --cor01:#ffffff;
+    --cor02:#c7c4c4;
+    --cor03:#818080;
+    --cor04:#6b6a6a;
+    --cor05:#413f3f;
+    --cor06:#0a0a0a;
+    --cor07:rgb(111, 133, 194);
+
+    --font-destaque:"Playfair Display", system-ui;
+    --font-padrão:"Gowun Batang", serif;
+    --font-titulos:"Cinzel", serif;
+ }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body{
+    background: linear-gradient(45deg, #413f3f, #6b6a6a);
+
+
+}
+
+
+ header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display:flex;
+    background: linear-gradient(360deg, #413f3f, #6b6a6a);
+    padding: 5px 0;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    
+   
+ }
+
+ .container-logo{
+    display: flex;
+    width: 600px;/*aqui faz o espaçamento da imagem com o NAV*/
+ }
+
+.container-logo img{
+    width: 30px;
+    border: 2px solid var(--cor07) ;
+}
+
+nav{
+    display: flex;
+    text-shadow: 1px 2px 3px black;
+
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style-type: none;
+}
+
+nav a{
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-family:var(--font-destaque);
+    font-size: 20px;
+    padding: 8px ;
+    position: relative;
+    transition-duration: 0.8s;
+}
+
+nav a:hover{
+    color: var(--cor07);
+}
+
+nav a::after{
+    content:" ";
+    width: 0;
+    height: 4px;
+    background-image: linear-gradient(45deg,#ffffff,rgb(4, 0, 255));
+    position: absolute;
+    top: 35px;
+    left:8px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover::after{
+    width: 50pxss
+}
+
+main{
+
+    display: flex;
+    padding: 300px 95px;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 1px 2px 3px black;
+   
+}
+
+
+article{
+    width: 200%;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    
+    
+}
+
+
+article h1{
+    font-size: 25px;
+    font-family: var(--font-padrão);
+    color: var(--cor07);
+}
+article h2{
+    font-size: 85px;
+    font-family: var(--font-titulos);
+    color: var(--cor01);
+    margin-bottom: 2px;
+
+}
+article h3{
+    font-size: 25px;
+    font-family: var(--font-titulos);
+    color: var(--cor02);
+    line-height:20px;
+}
+
+.cor1{
+    color: var(--cor07);
+}
+
+article p{
+    color: var(--cor02);
+    margin-top: 25px;
+}
+
+article aside img{
+    width: 100%;
+    
+
+}
+
+
+footer{
+    color: white;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    
+}
+
+aside img{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+
+.habilidades{
+     display: flex;
+    padding: 300px 200px 0 145px;
+    align-items: center;
+    text-shadow: 1px 2px 3px black;
+}
+
+.habilidades h1{
+    font-size: 40px;
+    font-family: var(--font-padrão);
+    color: var(--cor07);
+    padding: 0px 430px 0px 0px;
+    
+
+}
+
+.habilidades img{
+    width: 70px;
+    margin-right: 70px;
+    
+}
+
+.idiomas{
+    display: flex;
+    padding: 80px 145px;
+    align-items: center;
+    text-shadow: 1px 2px 3px black;
+}
+.idiomas h1{
+    font-size: 40px;
+    font-family: var(--font-padrão);
+    color: var(--cor07);
+    padding: 0 620px 0 0;
+}
+
+
+.idiomas img{
+    width: 90px;
+    margin-right: 70px;
+}
+
+.contatos{
+    display: flex;
+    padding: 370px 0 400px 150px;
+    
+    align-items: center;
+    text-shadow: 1px 2px 3px black;
+}
+
+
+.contatos h1{
+    font-size: 40px;
+    font-family: var(--font-padrão);
+    color: var(--cor07);
+    padding: 0 550px 0 0;
+}
+
+.contatos img{
+    width: 80px;
+    margin-right: 70px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+/* Resolução 1680x1050 */
+@media (max-width: 1680px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 5px 0;
+    }
+
+    main {
+        padding: 300px 95px;
+    }
+
+    article h2 {
+        font-size: 85px;
+    }
+
+    .habilidades img, .idiomas img, .contatos img {
+        max-width: 80px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+}
+
+/* Resolução 1024x768 */
+@media (max-width: 1024px) {
+    header {
+        
+        padding: 5px 0;
+    }
+
+    nav ul {
+        
+        gap: 10px;
+    }
+
+    main {
+        padding: 230px 50px;
+       
+    }
+
+    article h2 {
+        font-size: 40px;
+    }
+
+    article h3 {
+        font-size: 20px;
+    }
+
+.habilidades{
+    padding: 301px 234px 0 58px;
+}
+
+    .habilidades h1{
+  
+    padding: 0px 300px 0px 0px;
+        
+    }
+
+.idiomas{
+    padding: 100px 234px 0 58px;
+}
+
+    .idiomas h1{
+        padding: 0px 460px 0px 0px;
+    }
+
+    .contatos{
+       padding: 301px 234px 0 58px;
+    }
+
+    .contatos h1{
+        padding: 0px 400px 0px 0px;
+    }
+
+    .habilidades img, .idiomas img, .contatos img {
+        max-width: 60px;
+        margin-right: 40px;
+        
+    }
+    
+
+    footer {
+        padding: 20px;
+    }
+}
+
+/* Resolução 320x568 (celulares) */
+@media (max-width: 500px) {
+    header {
+        padding: 8px 0;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    main {
+        padding: 300px 20px;
+    }
+
+    
+
+    article h2 {
+        font-size: 30px;
+    }
+
+    article h3 {
+        font-size: 16px;
+    }
+
+    .habilidades{
+         padding: 301px 10px 0 20px;
+    }
+
+
+
+    .habilidades h1{
+     font-size:25px;
+     padding: 0px 47px 0px 0px;
+}
+
+.idiomas{
+    padding: 50px 10px 0 20px;
+}
+.idiomas h1{
+    font-size: 25px;
+    padding: 0px 165px 0px 0px;
+}
+
+.contatos{
+    padding: 370px 0 400px 20px;
+}
+.contatos h1{
+    font-size: 25px;
+    padding: 0px 110px 0px 0px;
+}
+
+
+    .habilidades img, .idiomas img, .contatos img {
+        max-width: 40px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
