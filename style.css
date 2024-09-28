@@ -251,3 +251,12 @@ aside img{
     nav a{
     font-size: 35px;
 }
+    main{
+        display: block;
+    }
+
+    article h1 {
+       text-align: center;
+      
+    }
+}
