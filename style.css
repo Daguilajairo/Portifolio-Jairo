@@ -68,6 +68,7 @@ nav a{
     padding: 8px ;
     position: relative;
     transition-duration: 0.8s;
+    text-shadow: 1px 2px 3px black;
 }
 
 nav a:hover{
@@ -91,8 +92,6 @@ nav a::after{
     padding: 260px 0 0 0 ;
     align-items: center;
     justify-content: space-between;
-    
-    
 }
 
 article {
@@ -104,13 +103,11 @@ article {
     padding: 0 0px 0 190px ;
 }
 
-
 .texto {
    color: #c7c4c4;
    font-family: var(--font-titulos);
    max-width: 700px;
    padding-right: 30px;
-   
 }
 
 article img{
@@ -128,7 +125,6 @@ article h1{
 
 article h2{
     font-size: 80px;
-   
 }
 article h3{
     font-size: 25px;
@@ -144,14 +140,10 @@ article .cor1{
 color: var(--cor07);
 }
 
-
-
 /*aqui começa o campo de habilidades*/
 aside{
-    
     padding: 50px;
 }
-
 
 .habilidades-container{
     display: flex;
@@ -170,6 +162,7 @@ aside{
     display: flex;
     margin-top: 50px;
 }
+
 .idiomas-container h1{
    display: flex;
     align-items: center;
@@ -181,7 +174,7 @@ aside{
 }
 
 .contatos-container h1{
-display: flex;
+    display: flex;
     align-items: center;
     text-shadow: 1px 2px 3px black;
     font-size: 40px;
@@ -191,8 +184,7 @@ display: flex;
 }
 
 .habilidades-container,.idiomas-container,.contatos-container{
-display: flex;
-    
+    display: flex;
 }
 
 .imagens-habilidades img,.imagens-idiomas img,.imagens-contatos img{
@@ -202,11 +194,13 @@ display: flex;
     padding:  10px 10px 10px 10px;
 }
 
-
 footer{
-    color: white;
-    margin: 20px 0px 0px 0px;
+    color:var(--cor07);
+    margin: 0px 0px 5px 0px;
     text-align: center;
+    font-size: 20px;
+    background: linear-gradient(360deg, #413f3f, #6b6a6a);
+   text-shadow: 1px 2px 3px black;
 }
 
 
