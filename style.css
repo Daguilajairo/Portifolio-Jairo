@@ -236,8 +236,7 @@ aside img{
 }
 
 
-
-@media  screen and (max-width: 768px){
+@media  screen and (max-width: 500px){
  
     body{
     background-image: none;
@@ -284,6 +283,9 @@ aside img{
 article p{
         padding: -20px 0px;
 }
-
+aside img{
+    margin:40px 0 0 0 ;
+    width: 100%;
+}
 
 }
