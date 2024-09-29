@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Gowun+Batang:wght@400;700&display=swap');
 
+ /*aqui são variaveis para facilitar a cod*/
  :root{
     --cor01:#ffffff;
     --cor02:#c7c4c4;
@@ -17,7 +18,7 @@
     --font-padrão:"Gowun Batang", serif;
     --font-titulos:"Cinzel", serif;
  }
-
+/*aqui são tags gerais para pagina*/
  *{
     margin: 0;
     padding: 0;
@@ -25,40 +26,30 @@
  }
 
 body{
-    background: linear-gradient(45deg, #413f3f, #6b6a6a);
-
-
+   background-color: #413f3f;
 }
-
-
- header{
+/*aqui começa meu cabeçalho*/
+header{
     width: 100%;
     position: fixed;
     top: 0;
     display:flex;
     background: linear-gradient(360deg, #413f3f, #6b6a6a);
-    padding: 5px 0;
+    padding: 5px 100px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 18px;
-    
-   
  }
 
- .container-logo{
-    display: flex;
-    width: 600px;/*aqui faz o espaçamento da imagem com o NAV*/
- }
-
-.container-logo img{
+.container img{
     width: 30px;
-    border: 2px solid var(--cor07) ;
+    display: flex;
+    justify-content: flex-start;
 }
 
 nav{
     display: flex;
     text-shadow: 1px 2px 3px black;
-
 }
 
 ul{
@@ -94,63 +85,121 @@ nav a::after{
     transition-duration: 0.5s;
 }
 
-nav a:hover::after{
-    width: 50pxss
+/*aqui começa o corpo da pagina com minhas informaçoes e uma iamgem*/
+.main1{
+    display: flex;
+    padding: 260px 0 0 0 ;
+    align-items: center;
+    justify-content: space-between;
+    
+    
 }
 
-main{
-
+article {
     display: flex;
-    padding: 300px 95px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     text-shadow: 1px 2px 3px black;
+    max-width: 1400px;
+    padding: 0 0px 0 190px ;
+}
+
+
+.texto {
+   color: #c7c4c4;
+   font-family: var(--font-titulos);
+   max-width: 700px;
+   padding-right: 30px;
    
 }
 
-
-article{
-    width: 200%;
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    
-    
+article img{
+    width: 350px;
+    margin-left: 50px;
+    border-radius: 20px;
+    justify-content: space-between;
+    box-shadow: 1px 2px 3px black;
 }
-
 
 article h1{
-    font-size: 25px;
-    font-family: var(--font-padrão);
     color: var(--cor07);
+    font-size: 20px;
 }
-article h2{
-    font-size: 85px;
-    font-family: var(--font-titulos);
-    color: var(--cor01);
-    margin-bottom: 2px;
 
+article h2{
+    font-size: 80px;
+   
 }
 article h3{
     font-size: 25px;
-    font-family: var(--font-titulos);
-    color: var(--cor02);
-    line-height:20px;
-}
-
-.cor1{
-    color: var(--cor07);
 }
 
 article p{
-    color: var(--cor02);
-    margin-top: 25px;
+    color:#818080;
+    font-size: 15px;
+    padding: 10px 0 0 0 ;
 }
 
-article aside img{
-    width: 100%;
-    
+article .cor1{
+color: var(--cor07);
+}
 
+
+
+/*aqui começa o campo de habilidades*/
+aside{
+    
+    padding: 50px;
+}
+
+
+.habilidades-container{
+    display: flex;
+    margin-top: 300px;
+}
+
+.habilidades-container h1{
+    font-size: 40px;
+    font-family: var(--font-padrão);
+    color: var(--cor07);
+    text-shadow: 1px 2px 3px black;
+    padding: 0 570px 0 140px ;
+}
+
+.idiomas-container{
+    display: flex;
+    margin-top: 50px;
+}
+.idiomas-container h1{
+   display: flex;
+    align-items: center;
+    text-shadow: 1px 2px 3px black;
+    font-size: 40px;
+    font-family: var(--font-padrão);
+    color: var(--cor07);
+    padding: 0 710px 500px 140px ;
+}
+
+.contatos-container h1{
+display: flex;
+    align-items: center;
+    text-shadow: 1px 2px 3px black;
+    font-size: 40px;
+    font-family: var(--font-padrão);
+    color: var(--cor07);
+    padding: 0 655px 300px 140px ;
+}
+
+.habilidades-container,.idiomas-container,.contatos-container{
+display: flex;
+    
+}
+
+.imagens-habilidades img,.imagens-idiomas img,.imagens-contatos img{
+    width: 75px;
+    height: auto;
+    margin-right: 20px;
+    padding:  10px 10px 10px 10px;
 }
 
 
@@ -158,134 +207,11 @@ footer{
     color: white;
     margin: 20px 0px 0px 0px;
     text-align: center;
-    
-}
-
-aside img{
-    width: 90%;
-    display: block;
-    margin-left: auto;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    
 }
 
 
-.habilidades{
-     display: flex;
-    padding: 300px 200px 0 145px;
-    align-items: center;
-    text-shadow: 1px 2px 3px black;
-}
-
-.habilidades h1{
-    font-size: 40px;
-    font-family: var(--font-padrão);
-    color: var(--cor07);
-    padding: 0px 430px 0px 0px;
-    
-
-}
-
-.habilidades img{
-    width: 70px;
-    margin-right: 70px;
-    
-}
-
-.idiomas{
-    display: flex;
-    padding: 80px 145px;
-    align-items: center;
-    text-shadow: 1px 2px 3px black;
-}
-.idiomas h1{
-    font-size: 40px;
-    font-family: var(--font-padrão);
-    color: var(--cor07);
-    padding: 0 620px 0 0;
-}
 
 
-.idiomas img{
-    width: 90px;
-    margin-right: 70px;
-}
-
-.contatos{
-    display: flex;
-    padding: 370px 0 400px 150px;
-    
-    align-items: center;
-    text-shadow: 1px 2px 3px black;
-}
 
 
-.contatos h1{
-    font-size: 40px;
-    font-family: var(--font-padrão);
-    color: var(--cor07);
-    padding: 0 550px 0 0;
-}
 
-.contatos img{
-    width: 80px;
-    margin-right: 70px;
-    padding: 5px 5px 5px 5px;
-
-}
-
-
-@media  screen and (max-width: 500px){
- 
-    body{
-    background-image: none;
-    background-color: #413f3f;
-    }
-
-    header{
-        display: block;
-        text-align: center;
-    }
- 
-         
-    .container-logo{
-        display: block;
-        padding: 10px;
-        width: 500px;
-    }
-
-    .container-logo img{
-        width: 50px;
-        
-    }
-    
-    
-    nav a{
-    font-size: 30px;
-    padding: 0 15px;
-   
-}
-    main{
-        display: block;
-        text-align: center;
-        padding: 200px 95px;
-    }
-
-    article{
-        width: 50px;
-    }
-
-    article h2{
-        font-size: 66px;
-    }
-    
-article p{
-        padding: -20px 0px;
-}
-aside img{
-    margin:40px 0 0 0 ;
-    width: 100%;
-}
-
-}
