@@ -208,14 +208,14 @@ footer{
 }
 
 /*aqui começa a configuração de resposividade*/
-@media screen and (max-width:768px){
+@media screen and (max-width:500px){
     header{
     width: 100%;
     position: fixed;
     top: 0;
     display:flex;
     background: linear-gradient(360deg, #413f3f, #6b6a6a);
-    padding: 25px 100px;
+    padding: 20px ;
     align-items: center;
     justify-content: space-between;
     }
@@ -225,7 +225,7 @@ footer{
     color: #ffffff;
     text-decoration: none;
     font-family:var(--font-destaque);
-    font-size: 30px;
+    font-size: 20px;
     padding: 8px ;
     position: relative;
     transition-duration: 0.8s;
@@ -237,49 +237,102 @@ footer{
     justify-content: flex-start;
 }
 
+.main1{
+    display: flex;
+    padding: 150px 0 0 0 ;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
 article{
    display: block;
-    padding: 50px 0px 0px 400px ;
+    padding: 0px 0px 0px 48px ;
    
 } 
 
 article h1{
     color: var(--cor07);
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 article h2{
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
 }
 article h3{
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 }
 
 article p{
     color:#818080;
-    font-size: 15px;
-    padding: 10px 0 0 0 ;
+    font-size: 10px;
+    padding: 10px 0 30px 0 ;
     text-align: center;
 }
 
 article img{
     width: 350px;
-    margin-left: 10px;
+    margin-left: 30px;
     border-radius: 20px;
     justify-content: space-between;
     box-shadow: 1px 2px 3px black;
 }
 
+.habilidades-container{
+    display: block;
+    margin-top: 100px;
+    
+}
+
+.habilidades-container h1{
+    font-size: 40px;
+    font-family: var(--font-padrão);
+    color: var(--cor07);
+    text-shadow: 1px 2px 3px black;
+    padding: 80px 570px 0 100px ;
+}
 
 
 
+.imagens-habilidades img,.imagens-idiomas img,.imagens-contatos img{
+    width: 70px;
+    height: auto;
+    margin: 30px 0px 0px 20px ;
+}
+.idiomas-container{
+    display: block;
+    margin:0px 0px 500px 100px 
+}
 
+.idiomas-container h1{
+   display: block;
+    align-items: center;
+    text-shadow: 1px 2px 3px black;
+    font-size: 40px;
+    font-family: var(--font-padrão);
+    color: var(--cor07);
+    padding: 30px 710px 0px 30px ;
+}
 
+.habilidades-container,.idiomas-container,.contatos-container{
+    display: block;
+}
+.contatos-container h1{
+    display: block;
+    align-items: center;
+    text-shadow: 1px 2px 3px black;
+    font-size: 40px;
+    font-family: var(--font-padrão);
+    color: var(--cor07);
+    padding: 0px 0px 0px 0px ;
+    margin: 0px 120px 0px 120px;
+}
 
-
-
+.imagens-contatos{
+    margin: 0px 10px 250px 55px;
+}
 
 }
 
