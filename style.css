@@ -87,11 +87,14 @@ nav a::after{
 }
 
 /*aqui começa o corpo da pagina com minhas informaçoes e uma iamgem*/
+
+
 .main1{
     display: flex;
     padding: 260px 0 0 0 ;
     align-items: center;
     justify-content: space-between;
+   
 }
 
 article {
@@ -101,6 +104,7 @@ article {
     text-shadow: 1px 2px 3px black;
     max-width: 1400px;
     padding: 0 0px 0 190px ;
+    
 }
 
 .texto {
@@ -170,7 +174,7 @@ aside{
     font-size: 40px;
     font-family: var(--font-padrão);
     color: var(--cor07);
-    padding: 0 710px 500px 140px ;
+    padding: 0px 710px 500px 140px ;
 }
 
 .contatos-container h1{
@@ -203,9 +207,79 @@ footer{
    text-shadow: 1px 2px 3px black;
 }
 
+/*aqui começa a configuração de resposividade*/
+@media screen and (max-width:768px){
+    header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display:flex;
+    background: linear-gradient(360deg, #413f3f, #6b6a6a);
+    padding: 25px 100px;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    nav a{
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-family:var(--font-destaque);
+    font-size: 30px;
+    padding: 8px ;
+    position: relative;
+    transition-duration: 0.8s;
+    text-shadow: 1px 2px 3px black;
+}
+.container img{
+    width: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+article{
+   display: block;
+    padding: 50px 0px 0px 400px ;
+   
+} 
+
+article h1{
+    color: var(--cor07);
+    font-size: 20px;
+    text-align: center;
+}
+article h2{
+    text-align: center;
+    font-size: 80px;
+}
+article h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+article p{
+    color:#818080;
+    font-size: 15px;
+    padding: 10px 0 0 0 ;
+    text-align: center;
+}
+
+article img{
+    width: 350px;
+    margin-left: 10px;
+    border-radius: 20px;
+    justify-content: space-between;
+    box-shadow: 1px 2px 3px black;
+}
 
 
 
 
 
+
+
+
+
+
+}
 
